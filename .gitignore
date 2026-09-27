@@ -1,0 +1,23 @@
+# Godot 4 引擎缓存与导入产物
+.godot/
+android/
+*.translation
+
+# 导出产物
+build/
+export/
+*.exe
+*.pck
+*.zip
+export_credentials.cfg
+
+# 预编译索引：由 tools/build_index.gd 从 data/shi 与 data/yun 生成，
+# 体积近 100 MB，属于构建产物，故不入库（缺失时程序会自动回退到 JSON 加载）。
+data/index.bin
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+*.tmp
+Thumbs.db
+desktop.ini
